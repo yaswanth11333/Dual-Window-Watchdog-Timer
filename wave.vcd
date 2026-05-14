@@ -1,0 +1,990 @@
+$date
+	Thu Apr 16 19:51:10 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_watchdog_system $end
+$var wire 8 ! safe_out [7:0] $end
+$var reg 1 " clk $end
+$var reg 1 # kick $end
+$var reg 16 $ max_th [15:0] $end
+$var reg 16 % min_th [15:0] $end
+$var reg 1 & rst_n $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # kick $end
+$var wire 16 ' max_threshold [15:0] $end
+$var wire 16 ( min_threshold [15:0] $end
+$var wire 1 & rst_n $end
+$var wire 8 ) safe_state_out [7:0] $end
+$var wire 1 * internal_reset $end
+$var wire 1 + internal_error $end
+$var wire 16 , internal_count [15:0] $end
+$scope module u_ctrl $end
+$var wire 1 " clk $end
+$var wire 1 & rst_n $end
+$var wire 1 + win_error $end
+$var wire 16 - data_in [15:0] $end
+$var wire 8 . _00_ [7:0] $end
+$var reg 1 * action_reset $end
+$var reg 8 / safe_out [7:0] $end
+$upscope $end
+$scope module u_mon $end
+$var wire 1 0 _000_ $end
+$var wire 1 1 _001_ $end
+$var wire 1 2 _002_ $end
+$var wire 1 3 _003_ $end
+$var wire 1 4 _004_ $end
+$var wire 1 5 _005_ $end
+$var wire 1 6 _006_ $end
+$var wire 1 7 _007_ $end
+$var wire 1 8 _008_ $end
+$var wire 1 9 _009_ $end
+$var wire 1 : _010_ $end
+$var wire 1 ; _011_ $end
+$var wire 1 < _012_ $end
+$var wire 1 = _013_ $end
+$var wire 1 > _014_ $end
+$var wire 1 ? _015_ $end
+$var wire 1 @ _016_ $end
+$var wire 1 A _017_ $end
+$var wire 1 B _018_ $end
+$var wire 1 C _019_ $end
+$var wire 1 D _020_ $end
+$var wire 1 E _021_ $end
+$var wire 1 F _022_ $end
+$var wire 1 G _023_ $end
+$var wire 1 H _024_ $end
+$var wire 1 I _025_ $end
+$var wire 1 J _026_ $end
+$var wire 1 K _027_ $end
+$var wire 1 L _028_ $end
+$var wire 1 M _029_ $end
+$var wire 1 N _030_ $end
+$var wire 1 O _031_ $end
+$var wire 1 P _032_ $end
+$var wire 1 Q _033_ $end
+$var wire 1 R _034_ $end
+$var wire 1 S _035_ $end
+$var wire 1 T _036_ $end
+$var wire 1 U _037_ $end
+$var wire 1 V _038_ $end
+$var wire 1 W _039_ $end
+$var wire 1 X _040_ $end
+$var wire 1 Y _041_ $end
+$var wire 1 Z _042_ $end
+$var wire 1 [ _043_ $end
+$var wire 1 \ _044_ $end
+$var wire 1 ] _045_ $end
+$var wire 1 ^ _046_ $end
+$var wire 1 _ _047_ $end
+$var wire 1 ` _048_ $end
+$var wire 1 a _049_ $end
+$var wire 1 b _050_ $end
+$var wire 1 c _051_ $end
+$var wire 1 d _052_ $end
+$var wire 1 e _053_ $end
+$var wire 1 f _054_ $end
+$var wire 1 g _055_ $end
+$var wire 1 h _056_ $end
+$var wire 1 i _057_ $end
+$var wire 1 j _058_ $end
+$var wire 1 k _059_ $end
+$var wire 1 l _060_ $end
+$var wire 1 m _061_ $end
+$var wire 1 n _062_ $end
+$var wire 1 o _063_ $end
+$var wire 1 p _064_ $end
+$var wire 1 q _065_ $end
+$var wire 1 r _066_ $end
+$var wire 1 s _067_ $end
+$var wire 1 t _068_ $end
+$var wire 1 u _069_ $end
+$var wire 1 v _070_ $end
+$var wire 1 w _071_ $end
+$var wire 1 x _072_ $end
+$var wire 1 y _073_ $end
+$var wire 1 z _074_ $end
+$var wire 1 { _075_ $end
+$var wire 1 | _076_ $end
+$var wire 1 } _077_ $end
+$var wire 1 ~ _078_ $end
+$var wire 1 !" _079_ $end
+$var wire 1 "" _080_ $end
+$var wire 1 #" _081_ $end
+$var wire 1 $" _082_ $end
+$var wire 1 %" _083_ $end
+$var wire 1 &" _084_ $end
+$var wire 1 '" _085_ $end
+$var wire 1 (" _086_ $end
+$var wire 1 )" _087_ $end
+$var wire 1 *" _088_ $end
+$var wire 1 +" _089_ $end
+$var wire 1 ," _090_ $end
+$var wire 1 -" _091_ $end
+$var wire 1 ." _092_ $end
+$var wire 1 /" _093_ $end
+$var wire 1 0" _094_ $end
+$var wire 1 1" _095_ $end
+$var wire 1 2" _096_ $end
+$var wire 1 3" _097_ $end
+$var wire 1 4" _098_ $end
+$var wire 1 5" _099_ $end
+$var wire 1 6" _100_ $end
+$var wire 1 7" _101_ $end
+$var wire 1 8" _102_ $end
+$var wire 1 9" _103_ $end
+$var wire 1 :" _104_ $end
+$var wire 1 ;" _105_ $end
+$var wire 1 <" _106_ $end
+$var wire 1 =" _107_ $end
+$var wire 1 >" _108_ $end
+$var wire 1 ?" _109_ $end
+$var wire 1 @" _110_ $end
+$var wire 1 A" _111_ $end
+$var wire 1 B" _112_ $end
+$var wire 1 C" _113_ $end
+$var wire 1 D" _114_ $end
+$var wire 1 E" _115_ $end
+$var wire 1 F" _116_ $end
+$var wire 1 G" _117_ $end
+$var wire 1 H" _118_ $end
+$var wire 1 I" _119_ $end
+$var wire 1 J" _120_ $end
+$var wire 1 K" _121_ $end
+$var wire 1 L" _122_ $end
+$var wire 1 M" _123_ $end
+$var wire 1 N" _124_ $end
+$var wire 1 O" _125_ $end
+$var wire 1 P" _126_ $end
+$var wire 1 Q" _127_ $end
+$var wire 1 R" _128_ $end
+$var wire 1 S" _129_ $end
+$var wire 1 T" _130_ $end
+$var wire 1 U" _131_ $end
+$var wire 1 V" _132_ $end
+$var wire 1 W" _133_ $end
+$var wire 1 X" _134_ $end
+$var wire 1 Y" _135_ $end
+$var wire 1 Z" _136_ $end
+$var wire 1 [" _137_ $end
+$var wire 1 \" _138_ $end
+$var wire 1 ]" _139_ $end
+$var wire 1 ^" _140_ $end
+$var wire 1 _" _141_ $end
+$var wire 1 `" _142_ $end
+$var wire 1 a" _143_ $end
+$var wire 1 b" _144_ $end
+$var wire 1 c" _145_ $end
+$var wire 1 d" _146_ $end
+$var wire 1 e" _147_ $end
+$var wire 1 f" _148_ $end
+$var wire 1 g" _149_ $end
+$var wire 1 h" _150_ $end
+$var wire 1 i" _151_ $end
+$var wire 1 j" _152_ $end
+$var wire 1 " clk $end
+$var wire 16 k" max_threshold [15:0] $end
+$var wire 16 l" min_threshold [15:0] $end
+$var wire 1 & rst_n $end
+$var wire 16 m" count [15:0] $end
+$var reg 1 + win_error $end
+$upscope $end
+$scope module u_time $end
+$var wire 1 n" _001_ $end
+$var wire 1 o" _002_ $end
+$var wire 1 p" _003_ $end
+$var wire 1 q" _004_ $end
+$var wire 1 r" _005_ $end
+$var wire 1 s" _006_ $end
+$var wire 1 t" _007_ $end
+$var wire 1 u" _008_ $end
+$var wire 1 v" _009_ $end
+$var wire 1 w" _010_ $end
+$var wire 1 x" _011_ $end
+$var wire 1 y" _012_ $end
+$var wire 1 z" _013_ $end
+$var wire 1 {" _014_ $end
+$var wire 1 |" _015_ $end
+$var wire 1 }" _016_ $end
+$var wire 1 ~" _017_ $end
+$var wire 1 !# _018_ $end
+$var wire 1 "# _019_ $end
+$var wire 1 ## _020_ $end
+$var wire 1 $# _021_ $end
+$var wire 1 %# _022_ $end
+$var wire 1 &# _023_ $end
+$var wire 1 '# _024_ $end
+$var wire 1 (# _025_ $end
+$var wire 1 )# _026_ $end
+$var wire 1 *# _027_ $end
+$var wire 1 +# _028_ $end
+$var wire 1 ,# _029_ $end
+$var wire 1 -# _030_ $end
+$var wire 1 .# _031_ $end
+$var wire 1 /# _032_ $end
+$var wire 1 0# _033_ $end
+$var wire 1 1# _034_ $end
+$var wire 1 2# _035_ $end
+$var wire 1 3# _036_ $end
+$var wire 1 4# _037_ $end
+$var wire 1 5# _038_ $end
+$var wire 1 6# _039_ $end
+$var wire 1 7# _040_ $end
+$var wire 1 8# _041_ $end
+$var wire 1 9# _042_ $end
+$var wire 1 :# _043_ $end
+$var wire 1 ;# _044_ $end
+$var wire 1 " clk $end
+$var wire 1 # kick $end
+$var wire 1 & rst_n $end
+$var wire 1 * system_reset_in $end
+$var wire 16 <# _000_ [15:0] $end
+$var reg 16 =# count [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 =#
+b1 <#
+0;#
+0:#
+09#
+08#
+07#
+06#
+05#
+04#
+03#
+02#
+01#
+00#
+0/#
+0.#
+0-#
+0,#
+0+#
+0*#
+0)#
+0(#
+0'#
+0&#
+0%#
+0$#
+0##
+0"#
+0!#
+0~"
+1}"
+0|"
+1{"
+0z"
+0y"
+0x"
+0w"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+b0 m"
+b10100 l"
+b110010 k"
+1j"
+0i"
+1h"
+1g"
+1f"
+1e"
+1d"
+1c"
+1b"
+1a"
+1`"
+1_"
+1^"
+1]"
+1\"
+1["
+1Z"
+1Y"
+1X"
+0W"
+1V"
+1U"
+1T"
+0S"
+1R"
+1Q"
+1P"
+1O"
+0N"
+1M"
+0L"
+0K"
+1J"
+0I"
+1H"
+1G"
+1F"
+1E"
+0D"
+0C"
+1B"
+1A"
+1@"
+1?"
+1>"
+0="
+1<"
+1;"
+1:"
+19"
+18"
+07"
+16"
+15"
+14"
+13"
+12"
+11"
+00"
+1/"
+0."
+1-"
+1,"
+0+"
+1*"
+1)"
+1("
+1'"
+1&"
+0%"
+1$"
+1#"
+1""
+1!"
+0~
+0}
+1|
+0{
+0z
+1y
+1x
+1w
+1v
+0u
+1t
+1s
+0r
+1q
+1p
+0o
+0n
+0m
+1l
+1k
+1j
+0i
+0h
+0g
+1f
+0e
+1d
+1c
+0b
+1a
+1`
+1_
+1^
+1]
+1\
+1[
+1Z
+1Y
+1X
+0W
+1V
+1U
+0T
+1S
+1R
+1Q
+1P
+1O
+1N
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1F
+1E
+0D
+0C
+1B
+1A
+1@
+1?
+1>
+1=
+0<
+1;
+0:
+19
+18
+17
+16
+15
+14
+13
+02
+11
+10
+b0 /
+b0 .
+b0 -
+b0 ,
+0+
+0*
+b0 )
+b10100 (
+b110010 '
+0&
+b10100 %
+b110010 $
+0#
+0"
+b0 !
+$end
+#5
+1"
+#10
+0"
+#15
+1"
+#20
+0"
+1&
+#25
+0|
+1:#
+b10 <#
+0y
+19#
+b1 ,
+b1 -
+b1 m"
+b1 =#
+1+
+1"
+#30
+0"
+#35
+1%"
+0#"
+0""
+1}
+b0 <#
+1|
+0@"
+1{
+0:#
+1y
+0?"
+1z
+0}"
+1*
+b10 ,
+b10 -
+b10 m"
+b10 =#
+1"
+#40
+0"
+#45
+0%"
+1#"
+1""
+0}
+1@"
+0{
+1?"
+0z
+09#
+b0 ,
+b0 -
+b0 m"
+b0 =#
+1"
+#50
+0"
+#55
+1"
+#60
+0"
+#65
+1"
+#70
+0"
+#75
+1"
+#80
+0"
+#85
+1"
+#90
+0"
+#95
+1"
+#100
+0"
+#105
+1"
+#110
+0"
+#115
+1"
+#120
+0"
+#125
+1"
+#130
+0"
+#135
+1"
+#140
+0"
+#145
+1"
+#150
+0"
+#155
+1"
+#160
+0"
+#165
+1"
+#170
+0"
+#175
+1"
+#180
+0"
+#185
+1"
+#190
+0"
+#195
+1"
+#200
+0"
+#205
+1"
+#210
+0"
+#215
+1"
+#220
+0"
+#225
+1"
+#230
+0"
+#235
+1"
+#240
+0"
+#245
+1"
+#250
+0"
+#255
+1"
+#260
+0"
+#265
+1"
+#270
+0"
+#275
+1"
+#280
+0"
+#285
+1"
+#290
+0"
+#295
+1"
+#300
+0"
+#305
+1"
+#310
+0"
+#315
+1"
+#320
+0"
+#325
+1"
+#330
+0"
+#335
+1"
+#340
+0"
+#345
+1"
+#350
+0"
+#355
+1"
+#360
+0"
+#365
+1#
+1"
+#370
+0"
+#375
+1"
+0#
+#380
+0"
+#385
+1"
+#390
+0"
+#395
+1"
+#400
+0"
+#405
+1"
+#410
+0"
+#415
+1"
+#420
+0"
+#425
+1"
+#430
+0"
+#435
+1"
+#440
+0"
+#445
+1"
+#450
+0"
+#455
+1"
+#460
+0"
+#465
+1#
+1"
+#470
+0"
+#475
+1"
+0#
+#480
+0"
+#485
+1"
+#490
+0"
+#495
+1"
+#500
+0"
+#505
+1"
+#510
+0"
+#515
+1"
+#520
+0"
+#525
+1"
+#530
+0"
+#535
+1"
+#540
+0"
+#545
+1"
+#550
+0"
+#555
+1"
+#560
+0"
+#565
+1"
+#570
+0"
+#575
+1"
+#580
+0"
+#585
+1"
+#590
+0"
+#595
+1"
+#600
+0"
+#605
+1"
+#610
+0"
+#615
+1"
+#620
+0"
+#625
+1"
+#630
+0"
+#635
+1"
+#640
+0"
+#645
+1"
+#650
+0"
+#655
+1"
+#660
+0"
+#665
+1"
+#670
+0"
+#675
+1"
+#680
+0"
+#685
+1"
+#690
+0"
+#695
+1"
+#700
+0"
+#705
+1"
+#710
+0"
+#715
+1"
+#720
+0"
+#725
+1"
+#730
+0"
+#735
+1"
+#740
+0"
+#745
+1"
+#750
+0"
+#755
+1"
+#760
+0"
+#765
+1"
+#770
+0"
+#775
+1"
+#780
+0"
+#785
+1"
+#790
+0"
+#795
+1"
+#800
+0"
+#805
+1"
+#810
+0"
+#815
+1"
+#820
+0"
+#825
+1"
+#830
+0"
+#835
+1"
+#840
+0"
+#845
+1"
+#850
+0"
+#855
+1"
+#860
+0"
+#865
+1"
+#870
+0"
+#875
+1"
+#880
+0"
+#885
+1"
+#890
+0"
+#895
+1"
+#900
+0"
+#905
+1"
+#910
+0"
+#915
+1"
+#920
+0"
+#925
+1"
+#930
+0"
+#935
+1"
+#940
+0"
+#945
+1"
+#950
+0"
+#955
+1"
+#960
+0"
+#965
+1"
+#970
+0"
+#975
+1"
+#980
+0"
+#985
+1"
+#990
+0"
+#995
+1"
+#1000
+0"
+#1005
+1"
+#1010
+0"
+#1015
+1"
+#1020
+0"
+#1025
+1"
+#1030
+0"
+#1035
+1"
+#1040
+0"
+#1045
+1"
+#1050
+0"
+#1055
+1"
+#1060
+0"
+#1065
+1"
+#1070
+0"
+#1075
+1"
+#1080
+0"
+#1085
+1"
+#1090
+0"
+#1095
+1"
+#1100
+0"
+#1105
+1"
+#1110
+0"
+#1115
+1"
+#1120
+0"
+#1125
+1"
+#1130
+0"
+#1135
+1"
+#1140
+0"
+#1145
+1"
+#1150
+0"
+#1155
+1"
+#1160
+0"
+#1165
+1"
+#1170
+0"
+#1175
+1"

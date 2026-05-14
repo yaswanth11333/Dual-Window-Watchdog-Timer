@@ -1,0 +1,105 @@
+
+12. Printing statistics.
+
+=== watchdog_system_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       61 wire bits
+        9 public wires
+       61 public wire bits
+        6 ports
+       43 port bits
+        3 submodules
+        1   safety_ctrl
+        1   system_timebase
+        1   window_monitor
+
+=== safety_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       36 wire bits
+        6 public wires
+       28 public wire bits
+        6 ports
+       28 port bits
+       17 cells
+        8   $_ANDNOT_
+        9   $_DFF_PN0_
+
+=== window_monitor ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      159 wires
+      204 wire bits
+        6 public wires
+       51 public wire bits
+        6 ports
+       51 port bits
+      154 cells
+        5   $_ANDNOT_
+       45   $_AND_
+        1   $_DFF_PN0_
+       36   $_NAND_
+        3   $_NOR_
+       58   $_ORNOT_
+        1   $_OR_
+        5   $_XNOR_
+
+=== system_timebase ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+       80 wire bits
+        5 public wires
+       20 public wire bits
+        5 ports
+       20 port bits
+       76 cells
+       14   $_ANDNOT_
+       29   $_AND_
+       16   $_DFF_PN0_
+        1   $_NAND_
+        1   $_NOR_
+       14   $_OR_
+        1   $_XNOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      247 watchdog_system_top
+       17 safety_ctrl
+       76 system_timebase
+      154 window_monitor
+
+        +----------Count including submodules.
+        | 
+      225 wires
+      381 wire bits
+       26 public wires
+      160 public wire bits
+       23 ports
+      142 port bits
+        - memories
+        - memory bits
+        - processes
+      247 cells
+       27   $_ANDNOT_
+       74   $_AND_
+       26   $_DFF_PN0_
+       37   $_NAND_
+        4   $_NOR_
+       58   $_ORNOT_
+       15   $_OR_
+        6   $_XNOR_
+        3 submodules
+        1   safety_ctrl
+        1   system_timebase
+        1   window_monitor
+

@@ -1,0 +1,16 @@
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `watchdog_system_top'. Setting top module to watchdog_system_top.
+
+14.1. Analyzing design hierarchy..
+Top module:  \watchdog_system_top
+Used module:     \safety_ctrl
+Used module:     \window_monitor
+Used module:     \system_timebase
+
+14.2. Analyzing design hierarchy..
+Top module:  \watchdog_system_top
+Used module:     \safety_ctrl
+Used module:     \window_monitor
+Used module:     \system_timebase
+Removed 0 unused modules.
