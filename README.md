@@ -11,7 +11,7 @@ Low-power Dual Window Watchdog Timer implemented in Verilog with early and late 
 - Kick occurs before minimum threshold
 - `win_error` becomes HIGH
 - System triggers reset
-![Early Kick](waveforms/waveform_early_kick.png)
+![Early Kick](result.png)
 ---
 ##  Future Improvements
 - Add Late Kick waveform
